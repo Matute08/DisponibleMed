@@ -7,6 +7,7 @@ import { crudRouter } from './routes/crud.js';
 import { frontendRouter } from './routes/frontend.js';
 import { automationRouter } from './routes/automation.js';
 import { authRouter } from './routes/auth.js';
+import { statusRouter } from './routes/status.js';
 
 const app = express();
 
@@ -26,6 +27,7 @@ app.use(cors({
 app.use(express.json({ limit: '1mb' }));
 
 app.get('/health', (_req, res) => res.json({ ok: true }));
+app.use(statusRouter);
 app.use(authRouter);
 app.use(automationRouter);
 app.use(requireAuth);
