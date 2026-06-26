@@ -8,7 +8,7 @@ export function authMessage(error: unknown) {
   if (raw.includes('invalid login credentials')) return 'Email o contrasena incorrectos.';
   if (raw.includes('email not confirmed')) return 'El email todavia no esta confirmado.';
   if (raw.includes('password')) return 'La contrasena debe tener al menos 6 caracteres.';
-  if (raw.includes('network')) return 'No se pudo conectar con el servidor. Verifica que el backend este iniciado y que VITE_API_URL apunte a la direccion correcta.';
+  if (raw.includes('network')) return 'No se pudo conectar con el servidor. Intenta nuevamente en unos segundos.';
   if (anyError.status === 429) return 'Demasiados intentos seguidos. Espera un momento y vuelve a probar.';
 
   return anyError.message ? `No se pudo completar la accion: ${anyError.message}` : 'No se pudo completar la accion.';

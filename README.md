@@ -26,7 +26,8 @@ npm run dev:frontend
 ```
 
 Frontend: `http://localhost:5173`  
-Backend: `http://localhost:4000`
+Backend local: `http://localhost:4000`
+Backend Render: `https://disponiblemed.onrender.com`
 
 ## Supabase
 
