@@ -1,0 +1,16 @@
+{
+  "name": "DisponibleMed",
+  "short_name": "DisponibleMed",
+  "description": "Gestion de disponibilidad automatica por WhatsApp",
+  "start_url": "/dashboard",
+  "display": "standalone",
+  "background_color": "#f8fafc",
+  "theme_color": "#0f766e",
+  "icons": [
+    {
+      "src": "/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}
